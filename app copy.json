@@ -1,0 +1,21 @@
+{
+  "name": "SmartElectricMeterApp",
+  "displayName": "Smart Electric Meter App",
+  "platforms": ["ios", "android"],
+  "version": "1.0.0",
+  "orientation": "portrait",
+  "icon": "./assets/icon_logo.png",
+  "splash": {
+    "image": "./assets/icon_logo.png",
+    "resizeMode": "contain",
+    "backgroundColor": "#ffffff"
+  },
+  "updates": {
+    "fallbackToCacheTimeout": 0
+  },
+  "assetBundlePatterns": ["**/*"],
+  "ios": {
+    "supportsTablet": true
+  },
+  "description": "This is app for measuring consumption of your electric meter. "
+}
