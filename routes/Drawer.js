@@ -1,11 +1,11 @@
-import React from "react";
-import { createDrawerNavigator, DrawerItems } from "react-navigation-drawer";
-import { createAppContainer } from "react-navigation";
-import AboutStack from "./aboutStack";
-import HomeStack from "./homeStack";
-import { StyleSheet, Image } from "react-native";
-import { Container, Content, Header, Body, Text } from "native-base";
-import { globalStyles } from "../styles/Global";
+import React from 'react';
+import {createDrawerNavigator, DrawerItems} from 'react-navigation-drawer';
+import {createAppContainer} from 'react-navigation';
+import AboutStack from './aboutStack';
+import HomeStack from './homeStack';
+import {StyleSheet, Image} from 'react-native';
+import {Container, Content, Header, Body, Text} from 'native-base';
+import {globalStyles} from '../styles/Global';
 
 const CustomDrawerContentComponent = (props) => (
   <Container>
@@ -16,7 +16,7 @@ const CustomDrawerContentComponent = (props) => (
         </Text>
         <Image
           style={styles.drawerImage}
-          source={require("../assets/icon_logo.png")}
+          source={require('../assets/icon_logo.png')}
         />
       </Body>
     </Header>
@@ -36,31 +36,31 @@ const RootDrawerNavigator = createDrawerNavigator(
     },
   },
   {
-    initialRouteName: "Home",
-    drawerPosition: "left",
+    initialRouteName: 'Home',
+    drawerPosition: 'left',
     contentComponent: CustomDrawerContentComponent,
-    drawerOpenRoute: "DrawerOpen",
-    drawerCloseRoute: "DrawerClose",
-    drawerToggleRoute: "DrawerToggle",
-  }
+    drawerOpenRoute: 'DrawerOpen',
+    drawerCloseRoute: 'DrawerClose',
+    drawerToggleRoute: 'DrawerToggle',
+  },
 );
 
 const styles = StyleSheet.create({
   drawerHeader: {
     height: 250,
-    backgroundColor: "white",
+    backgroundColor: 'white',
   },
   drawerImage: {
     height: 130,
     width: 130,
     borderRadius: 65,
-    alignSelf: "center",
+    alignSelf: 'center',
   },
   text: {
-    alignSelf: "center",
+    alignSelf: 'center',
     fontSize: 22,
-    color: "#dd2c00",
-    fontWeight: "700",
+    color: '#dd2c00',
+    fontWeight: '700',
     marginBottom: 15,
   },
 });

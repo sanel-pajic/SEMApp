@@ -1,16 +1,16 @@
-import React from "react";
-import { View, StyleSheet, StatusBar, Text } from "react-native";
-import { IconButton, Button } from "react-native-paper";
-import { CameraComponent } from "../components/CameraComponent";
+import React from 'react';
+import {View, StyleSheet, StatusBar, Text} from 'react-native';
+import {IconButton, Button} from 'react-native-paper';
+// import {CameraComponent} from '../components/CameraComponent';
 
-export const Home = ({ navigation }) => {
+export const Home = ({navigation}) => {
   const handlePress = () => {
-    navigation.navigate("Details");
+    navigation.navigate('Details');
   };
 
-  const handleCameraPress = () => {
-    navigation.navigate("CameraScreen");
-  };
+  // const handleCameraPress = () => {
+  //   navigation.navigate('CameraScreen');
+  // };
 
   return (
     <View style={styles.container}>
@@ -23,9 +23,9 @@ export const Home = ({ navigation }) => {
       <View>
         <IconButton
           icon="camera"
-          color={"#2196f3"}
+          color={'#2196f3'}
           size={100}
-          onPress={handleCameraPress}
+          // onPress={handleCameraPress}
         />
       </View>
       <Button color="red" mode="outlined" onPress={handlePress}>
@@ -38,8 +38,8 @@ export const Home = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   icon: {
     width: 130,
@@ -47,8 +47,8 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 36,
-    fontWeight: "600",
-    fontFamily: "roboto-light",
+    fontWeight: '600',
+    fontFamily: 'roboto-light',
   },
-  textContainer: { position: "relative", top: 15 },
+  textContainer: {position: 'relative', top: 15},
 });

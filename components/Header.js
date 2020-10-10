@@ -1,8 +1,8 @@
-import React from "react";
-import { StyleSheet, Text, View, Image } from "react-native";
-import { MaterialIcons } from "@expo/vector-icons";
+import React from 'react';
+import {StyleSheet, Text, View, Image} from 'react-native';
+// import {MaterialIcons} from 'react-native-vector-icons';
 
-export const Header = ({ title, navigation }) => {
+export const Header = ({title, navigation}) => {
   const routeCheck = navigation.state.routeName;
   const openMenu = () => {
     navigation.openDrawer();
@@ -10,16 +10,16 @@ export const Header = ({ title, navigation }) => {
 
   return (
     <View style={styles.header}>
-      <MaterialIcons
+      {/* <MaterialIcons
         name="menu"
         size={28}
         onPress={openMenu}
         style={styles.icon}
-      />
+      /> */}
       <View>
-        {routeCheck === "Home" ? (
+        {routeCheck === 'Home' ? (
           <Image
-            source={require("../assets/icon_el.png")}
+            source={require('../assets/icon_el.png')}
             style={styles.imageLogo}
           />
         ) : null}
@@ -33,28 +33,28 @@ export const Header = ({ title, navigation }) => {
 
 const styles = StyleSheet.create({
   header: {
-    width: "100%",
-    height: "100%",
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "center",
+    width: '100%',
+    height: '100%',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   headerText: {
-    fontWeight: "600",
+    fontWeight: '600',
     fontSize: 24,
-    color: "white",
+    color: 'white',
     letterSpacing: 1,
-    fontFamily: "roboto-medium",
+    fontFamily: 'roboto-medium',
   },
   icon: {
-    position: "absolute",
+    position: 'absolute',
     left: 16,
-    color: "white",
+    color: 'white',
   },
   imageLogo: {
     width: 40,
     height: 40,
-    backgroundColor: "white",
+    backgroundColor: 'white',
     marginRight: 8,
     marginLeft: 48,
     borderRadius: 40,
