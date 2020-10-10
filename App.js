@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: '600',
     color: Colors.black,
-    fontFamily: 'Roboto-Bold',
+    fontFamily: 'Roboto-BoldItalic',
   },
   sectionDescription: {
     marginTop: 8,
