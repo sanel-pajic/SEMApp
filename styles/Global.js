@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import {StyleSheet} from 'react-native';
 
 export const globalStyles = StyleSheet.create({
   container: {
@@ -7,8 +7,8 @@ export const globalStyles = StyleSheet.create({
   },
   text: {
     fontSize: 18,
-    fontFamily: "roboto-light",
-    color: "#333",
+    fontFamily: 'roboto-light',
+    color: '#333',
   },
   paragraph: {
     marginVertical: 8,

@@ -1,7 +1,6 @@
-import React from 'react';
+import * as React from 'react';
 import {StyleSheet, Text, View, Image} from 'react-native';
-// import {MaterialIcons} from 'react-native-vector-icons';
-
+import {IconButton} from 'react-native-paper';
 export const Header = ({title, navigation}) => {
   const routeCheck = navigation.state.routeName;
   const openMenu = () => {
@@ -10,12 +9,13 @@ export const Header = ({title, navigation}) => {
 
   return (
     <View style={styles.header}>
-      {/* <MaterialIcons
-        name="menu"
+      <IconButton
+        icon="menu"
         size={28}
         onPress={openMenu}
         style={styles.icon}
-      /> */}
+        color="#FFFFFF"
+      />
       <View>
         {routeCheck === 'Home' ? (
           <Image
@@ -48,8 +48,7 @@ const styles = StyleSheet.create({
   },
   icon: {
     position: 'absolute',
-    left: 16,
-    color: 'white',
+    left: 0,
   },
   imageLogo: {
     width: 40,

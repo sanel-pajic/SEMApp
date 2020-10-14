@@ -1,18 +1,18 @@
-import React from "react";
-import { View } from "react-native";
-import { DatePickerComponent } from "../components/DatePickerComponent";
-import { Button, Text } from "react-native-paper";
-import { useTheme } from "react-native-paper";
-import { globalStyles } from "../styles/Global";
+import React from 'react';
+import {View} from 'react-native';
+import {DatePickerComponent} from '../components/DatePickerComponent';
+import {Button, Text} from 'react-native-paper';
+import {useTheme} from 'react-native-paper';
+import {globalStyles} from '../styles/Global';
 
-export const Details = ({ navigation }) => {
-  const { colors } = useTheme();
+export const Details = ({navigation}) => {
+  const {colors} = useTheme();
   const handlePress = () => {
     navigation.goBack();
   };
 
   return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
       <View>
         <Text>DETAILS PAGE</Text>
       </View>
@@ -27,13 +27,12 @@ export const Details = ({ navigation }) => {
         color="#2196f3"
         onPress={handlePress}
         style={{
-          position: "absolute",
+          position: 'absolute',
           left: 0,
           right: 0,
           bottom: 0,
-          width: "100%",
-        }}
-      >
+          width: '100%',
+        }}>
         Back To Home Screen
       </Button>
     </View>

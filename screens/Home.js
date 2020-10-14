@@ -1,6 +1,7 @@
 import React from 'react';
 import {View, StyleSheet, StatusBar, Text} from 'react-native';
 import {IconButton, Button} from 'react-native-paper';
+
 // import {CameraComponent} from '../components/CameraComponent';
 
 export const Home = ({navigation}) => {
@@ -8,9 +9,9 @@ export const Home = ({navigation}) => {
     navigation.navigate('Details');
   };
 
-  // const handleCameraPress = () => {
-  //   navigation.navigate('CameraScreen');
-  // };
+  const handleCameraPress = () => {
+    navigation.navigate('CameraScreen');
+  };
 
   return (
     <View style={styles.container}>
@@ -25,7 +26,7 @@ export const Home = ({navigation}) => {
           icon="camera"
           color={'#2196f3'}
           size={100}
-          // onPress={handleCameraPress}
+          onPress={handleCameraPress}
         />
       </View>
       <Button color="red" mode="outlined" onPress={handlePress}>
